@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendMoney">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textFontWeight="1"
+        android:padding="4dp"
+        android:text="Buy Goods and Services"
+        android:layout_marginTop="99dp"
+        android:layout_marginLeft="24sp"
+        android:layout_marginRight="24sp"
+        android:textAlignment="center"
+        android:textSize="32sp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="24sp"
+        android:layout_marginRight="24sp"
+        android:ems="10"
+        android:hint="Enter Till Number"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter Amount"
+        android:textAlignment="textStart"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="24sp"
+        android:layout_marginRight="24sp"
+        android:textSize="24sp"
+        android:layout_below="@+id/phone"/>
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="24sp"
+        android:layout_marginRight="24sp"
+        android:text="ok"
+        android:textSize="24sp"
+        android:padding="4dp"
+        android:layout_below="@+id/amount"
+        />
+</RelativeLayout>
